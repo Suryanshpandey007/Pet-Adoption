@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Application</title>
+</head>
+<body>
+    <h1>Pet Adoption Application</h1>
+    <img src="images/Dog.jpg" alt="Image of Dog" width="300">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <form action="/submit_form" method="post">
+          <label for="Full Name:" >Full Name:</label>
+          <input type="text" name="Full Name:" id="Full Name:">
+          <br><br>
+          <label for="Email:" >Email:</label>
+          <input type="text" name="Email:" id="Email:">
+          <br><br>
+          <label for="Phone:" >Phone:</label>
+          <input type="text" name="Phone:" id="Phone:">
+          <br>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend>Pet Preference</legend>
+        <form action="/submit_form" method="post">
+          <label for="Type of Pet:" >Type of Pet:</label>
+          <select name="Type of Pet:" id="Type of Pet:">
+        <option value="0">Select One</option>
+           <option value="1">Dog</option>
+           <option value="2">Cat</option>
+           <option value="3">Bird</option>
+           <option value="4">Other</option>
+        </select>
+          <br>
+          <label for="Age" >Age Range:</label>
+          <br>
+          <input type="radio" name="Age" id="Young">
+          <label for="Young" >Young</label>
+          <br>
+          <input type="radio" name="Age" id="Adult">
+          <label for="Adult" >Adult</label>
+          
+          <br>
+          <input type="radio" name="Age" id="Senior">
+          <label for="Senior" >Senior</label>
+          <br>
+          <p>Why do you want to adopt a pet?</p>
+          <textarea name="Reason" id="Reason" rows="5" cols="50"></textarea>
+          <br>
+        </form>
+    </fieldset>
+    <br>
+    <button type="submit">Submit Application</button>
+    <br>
+    <h2>Watch Cute Puppy Videos</h2>
+    <video width="320" height="240" controls>
+        <source src="images/fps.mp4" type="video/mp4">
+        <source src="Images/dog-on-a-leash-146227.mp3" type="video/ogg">
+        Watch Cute Puppy Videos
+      </video>
+</body>
+</html>
